@@ -11,17 +11,17 @@
 </head>
 <body>
 <form  method = "post" action="zinit-login.php">
-	<ladel for = "username">Username:</ladel>
-	<input type="text" name = "username"/>
+	<label for = "username">Username:</label>
+	<input type="text" name = "username" id = "username"/>
 	<br/>
-	<ladel for = "email">E-mail:</ladel>
-	<input type="text" name = "email"/>
+	<label for = "email">E-mail:</ladel>
+	<input type="text" name = "email" id = "email"/>
 	<br/>
-	<ladel for = "password1">Password:</ladel>
-	<input type="password"  name = "password1"/>
+	<label for = "password1">Password:</label>
+	<input type="password"  name = "password1" id = "password1"/>
 	<br/>
-	<ladel for = "password2">Confirm password:</ladel>
-	<input type="password"  name = "password2"/>
+	<label for = "password2">Confirm password:</label>
+	<input type="password"  name = "password2" id = "password2"/>
 	<br/>
 	<input type="submit" value = "Sign up"/>
 </form>
