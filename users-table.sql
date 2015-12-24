@@ -1,0 +1,1 @@
+﻿CREATE TABLE `users` (id INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(id), username VARCHAR(30), email VARCHAR(30), password VARCHAR(30), last_visit DATETIME); 
