@@ -1,4 +1,5 @@
-﻿<?php
+<?php
+header("Content-Type: text/html; charset= UTF-8");
   //Подключаемя к БД
 	require_once('connect_vars.php');
 	try {
@@ -26,12 +27,11 @@
 				':email' => $email	
 			));
 			//Подтверждаем удачную авторизацию
-			echo '<p>Your account has been successfully created.</p>';
-			echo 'Return to <a href = zinit-task-kovalenko.php>main page</a>';
+			echo '<p>Ваш аккаунт успешно создан.</p>';
 			exit();
 	}
 	else{
-		echo '<p>You must enter all of the sign-up data, including the desired password twice.</p>';
+		echo '<p>Вы должны ввести все символы, включая пароли.</p>';
 	}
 // }
 ?>
