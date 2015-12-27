@@ -14,6 +14,9 @@ session_start();
 		}
 	</style>	
 	<script src = "scripts/jquery-1.11.3.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src = "scripts/captcha.js"></script>
+	<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
 </head>
 <body>
 <?php if (isset($_SESSION['id'])) { ?>
@@ -30,6 +33,7 @@ session_start();
 		<input type="password"  name = "login_password" id = "login_password"/>
 		<br/>
 		<input type="submit" id = "insertData" value = "Log in" name = "submit"/>
+		<div id="captcha" class='g-recaptcha' data-sitekey='6LcE2xMTAAAAAFOXLcdQ01QWvExYTaSq3l2HDLYs'></div>
 		<div id = "result"></div>
 	</form>
 <?php } ?>	
@@ -40,7 +44,7 @@ $('#loginForm').submit(function(){
 	});
 	 
 	$('#insertData').click(function(){
-	$.post( 
+	$.post(
 	$('#loginForm').attr('action'),
 	$('#loginForm :input').serializeArray(),
 		function(result){
