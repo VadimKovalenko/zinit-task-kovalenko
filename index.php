@@ -27,12 +27,12 @@ session_start();
 	<h3>Войти под существующей учётной записью</h3>
 	<form  method = "post" action="zinit-log-in.php" id = "loginForm">
 		<label for = "username">Username:</label>
-		<input type="text" name = "login_username" id = "login_username"/>
+		<input type="text" name = "login_username" id = "login_username" required>
 		<br/>
 		<label for = "password">Password:</label>
-		<input type="password"  name = "login_password" id = "login_password"/>
+		<input type="password"  name = "login_password" id = "login_password" required>
 		<br/>
-		<input type="submit" id = "insertData" value = "Log in" name = "submit"/>
+		<input type="submit" id = "insertData" value = "Log in" name = "submit">
 		<div id="captcha" class='g-recaptcha' data-sitekey='6LcE2xMTAAAAAFOXLcdQ01QWvExYTaSq3l2HDLYs'></div>
 		<div id = "result"></div>
 	</form>
